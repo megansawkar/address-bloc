@@ -1,9 +1,9 @@
 require_relative 'entry'
 
 class AddressBook
-  attr_reader: entries
+  attr_reader :entries
 
-  def initializes
+  def initialize
     @entries = []
   end
 

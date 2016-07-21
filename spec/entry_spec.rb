@@ -27,7 +27,7 @@ RSpec.describe Entry do
     it "reports its email" do
       expect(entry.email).to eq('augusta.king@lovelace.com')
     end
-    
+
     end
 
   describe "#to_s" do
