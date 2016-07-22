@@ -82,7 +82,7 @@ class MenuController
       name = gets.chomp
 
       match = address_book.binary_search(name)
-      system clear
+      system "clear"
 
       if match
         puts match.to_s
@@ -105,7 +105,7 @@ class MenuController
       begin
         entry_count = address_book.import_from_csv(file_name).count
         system "clear"
-        puts "#{entry_count} new entries added from #{{file_name}}"
+        puts "#{entry_count} new entries added from #{file_name}"
       rescue
         puts "#{file_name} is not a valid CSV file, please enter the name of a valid CSV file"
         read_csv
@@ -185,6 +185,6 @@ class MenuController
           puts "#{selection} is not a valid input"
           puts entry.to_s
           search_submenu(entry)
-        end  
+        end
     end
 end
